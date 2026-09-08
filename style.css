@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #24105f, #5420a0);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.stopwatch {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+#display {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: #6c35d9;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #8a5bea;
+}
+
+#start {
+    background: #20a65a;
+}
+
+#pause {
+    background: #e5a900;
+}
+
+#lap {
+    background: #3478db;
+}
+
+#reset {
+    background: #db3b3b;
+}
+
+.laps {
+    margin-top: 35px;
+    text-align: left;
+}
+
+.laps h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#lapList {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapList li {
+    background: rgba(255, 255, 255, 0.12);
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    #display {
+        font-size: 35px;
+    }
+
+    .stopwatch {
+        padding: 25px 15px;
+    }
+
+    button {
+        padding: 11px 18px;
+        font-size: 15px;
+    }
+}
